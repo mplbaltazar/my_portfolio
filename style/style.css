@@ -32,78 +32,37 @@ Body{
 .section-footer h3{
   padding: 10px;
 }
-.main-body{
-    background-color: #BED7DC;
-    height: auto;
-    width: 60%;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding-bottom: 30px;
-}
-.profile-details > h2{
-    font-family: "sacramento", "jersey 25";
-    font-size: 3rem;
-    color: white;
-}
-.profile > img{
-    margin-top: 50px;
-    height:300px;
-    border-radius: 50%;
-
-}
-.list-projects{
-    padding: 10px;
-    display: grid;
-    margin: auto;
-    width: 50%;
-    height: 300px;
-    /*border: 1px solid black;*/
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-}
-.items{
-  padding: 10px;
-  height: auto;
+.side-panel {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  
+  background-color: white;   /* makes it solid */
+  padding: 15px 10px;
   border-radius: 10px;
-  border: 1px solid gray;
-  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-.list-skills{
-  padding: 10px;
-  display: grid;
-  height: auto;
-  width: 50%;
-  margin: auto;
-  /*border: 1px solid black;*/
-  margin-bottom:30px;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
-}
-.items > img{
-  padding:10px;
-  float: left;
-  height: 100px;
-}
-.button{
-  background-color: green;
-  border-radius: 40px;
-  margin: auto;
-  padding: 15px;
-  color: white;
+
+.side-panel a {
   text-decoration: none;
-}
-.button:hover{
-  background-color: white;
   color: black;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.side-panel a:hover {
+  color: gray;
+}
+.hero {
+  padding: 80px 0;
+}
+.hero img {
+  max-width: 300px;
 }
 .socials{
-  display: grid;
-  margin: auto;
-  width: 60%;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .socials a{
   color: black;
@@ -112,31 +71,5 @@ Body{
 .socials a:hover{
   color: blue;
 }
-@media (max-width:1200px) and (min-width:418px) {
-  .main-body{
-    width: 90%;
-  }
-  .profile > img{
-    height:150px;
-    border-radius: 20%;
 
-}
-  .list-projects{
-    gap:10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: auto;
-    width: 80%;
-  }
-  .list-skills{
-    width: 80%;
-    gap:10px;
-  }
-  .items{
-    text-align: center;
-  }
-  .socials{
-    width: 90%;
-  }
-}
  
