@@ -4,62 +4,102 @@
         <meta charset="UTF-8">
         <title>Mark Paolo Baltazar - Resume</title>
         <link rel="stylesheet" href="../style/style_resume.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Sacramento&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <a class="back_button" href="../Index.html">Back</a>
-        <h1 class="title_h1">My Curriculum Vitae</h1>
-        <div id="navbar" class="nav">
-            <nav>
+    <body class="d-flex flex-column min-vh-100 bg-light shadow-sm">
+        <div class="container mt-3">
+            <a class="back_button btn btn-primary position-absolute start-0" href="../index.html">Back</a>
+            <h1 class="title_h1 mx-auto">My Curriculum Vitae</h1>
+        </div>
+        <div class="nav">
+            <div class="nav-inner">
                 <a href="#objective">Objective</a>
                 <a href="#tech_skills">Technical Skills</a>
-                <a href="#educ_h2">Education Background</a>
+                <a href="#educ_back">Education Background</a>
+                <a href="#work_exp">Work Experiences</a>
                 <a href="#profile_details">Personal Details</a>
                 <a href="#profile">Profile</a>
-                <a href="#work_exp">Work Experiences</a>
                 <a href="#cse">Government Examinations Passed</a>
                 <a href="#seminars">Seminars Attended</a>
                 <a href="#references">References</a>
-            </nav>
-        </div>
-        <section class="content">
-            <div class="details">
+            </div>
+         </div>   
+        <div class="content container">
+        <div class="details">
                 <div class="details_main">
-                    <H1>Mark Paolo M. Baltazar</H1>
-                    <h4>Home Address:</h4><p>Brgy. T.L Padilla, Carranglan, Nueva Ecija
-                    </p>
-                    <h4>Current Address:</h4><p>Block 6 lot 5, Camella Nueva Ecija, Brgy. Valle Cruz, 
-                    Cabanatuan City, Nueva Ecija</p>
-                    <h4>Mobile:</h4><p>+63 916-173-3392</p>
-                    <h4>Email:</h4><p>mplbaltazar0115@gmail.com</p>
+                    <h1>Mark Paolo M. Baltazar</h1>
+                    <div class="info">
+                        <span>Home Address:</span>
+                        <p>Brgy. T.L Padilla, Carranglan, Nueva Ecija</p>
+                    </div>
+                    <div class="info">
+                        <span>Current Address:</span>
+                        <p>Block 6 lot 5, Camella Nueva Ecija, Brgy. Valle Cruz, Cabanatuan City, Nueva Ecija</p>
+                    </div>
+                    <div class="info">
+                        <span>Mobile:</span>
+                        <p>+63 916-173-3392</p>
+                    </div>
+                    <div class="info">
+                        <span>Email:</span>
+                        <p>mplbaltazar0115@gmail.com</p>
+                    </div>
                 </div>
-                <img src="../assets/ID.jpg"/>
-                <hr/>
-            </div>
-            <div id="objective" class="objective">
+                <img src="../assets/ID.jpg" class="profile-img"/>
+        </div>
+            <hr/>
+        <section id="objective" class="section">
                 <h2>Objective:</h2>
-                <p>To be able to work efficiently and gain working experience and to contribute my knowledge and skills within the framework of a reputable and progressive organization.</p>
-            </div>
-            <div id="tech_skills" class="technical_skills">
-                <h2>Technical Skills:</h2>
+                <div class="info">
+                    <p>Aspiring web developer transitioning from IT support, with hands-on experience in building web applications using HTML, CSS, JavaScript, and Node.js. Seeking an opportunity to contribute to real-world projects while continuously improving my development skills.</p>
+                </div>
+        </section>
+            <hr/>
+        <section id="tech_skills" class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-group">
+                    <h4>Web Development</h4>
                     <ul>
-                        <li>Programming: (JAVA, Visual Basic, HTML, and PHP).</li>
-                        <li>Basic troubleshooting (Tier 1 issues) and basic networking knowledge.</li>
-                        <li>Communicating clients over the phone (English/Tagalog).</li>
-                        <li>Proficient in the use of office applications (Word, Excel, PowerPoint, Outlook, etc.).</li>
-                        <li>Basic editing using multimedia software (Adobe Photoshop, Adobe Premiere, Powerdirector, etc.).</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Node.js, Express.js, EJS</li>
                     </ul>
-            </div>
-            <div class="educ_h2" id="educ_h2">
-                <h2 >Educational Background:</h2>
-            </div>
-            <div class="educ_background">
-                
+                </div>
+                <div class="skills-group">
+                    <h4>Database</h4>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Postgre</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Git, GitHub, REST APIs, AJAX, jQuery</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h4>IT Support & Networking</h4>
+                    <ul>
+                        <li>Basic troubleshooting (Tier 1), basic networking knowledge</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h4>Other Tools</h4>
+                    <ul>
+                        <li>Microsoft Office (Word, Excel, PowerPoint, Outlook)</li>
+                    </ul>
+                </div>
+        </section>
+        <hr/>
+        <section class="section" id="educ_back">
+            <h2 >Educational Background:</h2>
+            <div class="table_template" >
                 <div class="items1">
                     <h3>Tertiary:</h3>
                 </div>
-                <div class="items2">
-                    <p>Central Luzon State University (CLSU)<br> 			
+                <div class="items2 info">
+                    <p><span>Central Luzon State University (CLSU)</span>		
                     Central Luzon State University, Science City of Munoz, Nueva Ecija<br> 
                        Bachelor of Science in Information Technology<br> 
                        Major: Web Developer/Programmer
@@ -69,11 +109,11 @@
                 <div class="items3">
                     <h3>Secondary:</h3>
                 </div>
-                <div class="items4">
-                    <p>Carranglan National High School<br>	    			
+                <div class="items4 info">
+                    <p><span>Carranglan National High School</span>	    			
                         Brgy. F.C Otic, Carranglan, Nueva Ecija
                         Inclusive Date: 2009-2012</p>
-                    <p>St. Joseph High School<br>		    			
+                    <p><span>St. Joseph High School</span>	    			
                         Brgy. Malasin, San Jose City, Nueva Ecija
                      
                     </p>
@@ -82,169 +122,195 @@
                 <div class="items5">
                     <h3>Elementary:</h3>
                 </div>
-                <div class="items6">
-                    <p>St. Joseph Elementary School	    				
+                <div class="items6 info">
+                    <p><span>St. Joseph Elementary School</span>	    				
                     Bonifacio Street, San Jose City, Nueva Ecija</p>
                     <p>Inclusive Date: 2002-2008</p>    
                 </div>
             </div>
+        </section>
             <hr/>
-            <div id="profile_details" class="profile_h2">
-                <h2>Personal Details:</h2>
+        <section class="section" id="work_exp">
+            <h2>Work Experiences:</h2>
+            <div class="work_experience">
+                <div class="items1">
+                    <h3>MotivIT</h3>
+                </div>
+                <div class="items2 info">
+                    <p>NOC (Network Operation Center) Analyst I<br>
+                    Tier 1 Technical Support<br>
+                    Address: Baloc, Sto. Domingo, Nueva Ecija</p>
+                    <p>Inclusive Date: November 2016 – December 2017.</p>    
+                </div>
+                <div class="items3">
+                    <h3>AMAIA Scapes Cabanatuan</h3>
+                </div>
+                <div class="items4 info">
+                    <p>Property Specialist<br>
+                    Address: Brgy. Bangad, Cabanatuan City</p>
+                    <p>Inclusive Date: July 2019 – October 2019.</p>    
+                </div>
+                <div class="items5">
+                    <h3>Hyundai Cabanatuan City</h3>
+                </div>
+                <div class="items6 info">
+                    <p>Trucks and Buses Sales Consultant<br>
+                    Address: Km 108 Maharlika Highway, Cabanatuan City, 3100</p>
+                    <p>Inclusive Date: March 2022 – November 2022</p>    
+                </div>
+                <div class="items7">
+                    <h3>Department of Education Division of San Jose City</h3>
+                </div>
+                <div class="items8 info">
+                    <p>Technical Support/Programmer (OJT)<br>
+                    Address: Sto. Nino 2nd, San Jose City, Nueva Ecija</p>
+                    <p>Inclusive Date: February 2016 - April 2016 (300 hours)</p>    
+                </div>
+                
             </div>
-            <div class="profile">
-                <p class="profile_item1">Nickname:</p>
-                <p class="profile_item2">Mark/Paolo</p>
-                <p class="profile_item3">Birth Date:</p>
-                <p class="profile_item4">January 15, 1996</p>
-                <p class="profile_item5">Age:</p>
-                <p class="profile_item6">28 Years Old</p>
-                <p class="profile_item7">Gender:</p>
-                <p class="profile_item8">Male</p>
-                <p class="profile_item9">Civil Status:</p>
-                <p class="profile_item10">Single</p>
-                <p class="profile_item11">Nationality:</p>
-                <p class="profile_item12">Filipino</p>
-                <p class="profile_item13">Language known:</p>
-                <p class="profile_item14">Tagalog / English</p>
-                <p class="profile_item15">Religion:</p>
-                <p class="profile_item16">Catholic</p>
-                <p class="profile_item17">Height:</p>
-                <p class="profile_item18">5’7”</p>
-                <p class="profile_item19">Weight:</p>
-                <p class="profile_item20">65 kg</p>
-                <p class="profile_item21">Father’s Name	:</p>
-                <p class="profile_item22">Enrique Baltazar</p>
-                <p class="profile_item23">Occupation:</p>
-                <p class="profile_item24">Plant Operator</p>
-                <p class="profile_item25">Place of work:</p>
-                <p class="profile_item26">Pantabangan Hydroelectric Power Plant, Marikit, Pantabangan, Nueva Ecija</p>
-                <p class="profile_item27">Mother’s Name:</p>
-                <p class="profile_item28">Rhodora Mariano</p>
-                <p class="profile_item29">Occupation:</p>
-                <p class="profile_item30">PUJ Operator</p>
+        </section>    
+        <section id="profile_details" class = "section">
+            <h2>Personal Details:</h2>
+            <div class="profile info">
+                <div class="row">
+                    <span>Nickname:</span>
+                    <p>Mark/Paolo</p>
+                </div>
+                <div class="row">
+                    <span>Birth Date</span>
+                    <p>January 15, 1996</p>
+                </div>
+                <div class="row">
+                    <span>Age:</span>
+                    <p>30 Years Old</p>
+                </div>
+                <div class="row">
+                    <span>Gender:</span>
+                    <p>Male</p>
+                </div>
+                <div class="row">
+                    <span>Civil Status:</span>
+                    <p>Single</p>
+                </div>
+                <div class="row">
+                    <span>Nationality:</span>
+                    <p>Filipino</p>
+                </div>
+                <div class="row">
+                    <span>Language known:</span>
+                    <p>Tagalog / English</p>
+                </div>
+                <div class="row">
+                    <span>Height:</span>
+                    <p>5’7”</p>
+                </div>
+                <div class="row">
+                    <span>Weight:</span>
+                    <p>65 kg</p>
+                </div>                    
+                
             </div>
+        </section>
             <hr/>
-            <div id="profile" class="profile_detail">
+        <section id="profile" class="section info">
                 <h2>Profile:</h2>
+                <p>IT support professional transitioning into web development, with hands-on experience in building web applications using HTML, CSS, JavaScript, and Node.js. Strong in troubleshooting, adaptable to new technologies, and committed to continuous learning and improvement.</p>
+                <h3>Key Strengths</h3>
+                <ul>
+                    <li>Strong problem-solving and troubleshooting skills</li>
+                    <li>Highly trustworthy, discreet, and ethical</li>
+                    <li>Fast learner and adaptable to new technologies</li>
+                    <li>Team-oriented and reliable</li>
+                </ul>
+                <h3>Additional Info:</h3>
                 <ul>
                     <li>Acquired Philippine Professional Driver’s License. (Restriction 1 and 2).</li>
-                    <li>Acquired Philippine Passport (Renewed last March 23, 2023).</li>
-                    <li>Highly trustworthy, discreet and ethical.</li>
-                    <li>Good technical skills and a fast learner.</li>
-                    <li>An excellent teammate.</li>
-                    <li>Flexible and willing to be trained for other work fields.</li>
-                    <li>Automobile/Aviation Enthusiast.</li>
+                    <li>Acquired Philippine Passport (Renewed last March 23, 2023).</li>  
                 </ul>
-            </div>
+        </section>
             <hr/>
-            <div id="work_exp" class="work_exp_h2">
-                <h2>Work Experiences:</h2>
-            </div>
-            <div class="work_experiences">
-                <h3>MotivIT</h3>
-                <p>NOC (Network Operation Center) Analyst I<br>
-                    Tier 1 Technical Support<br>
-                    Address: Baloc, Sto. Domingo, Nueva Ecija<br><br>
-                    Inclusive Date: November 2016 – December 2017.
-                </p>
-                <h3>AMAIA Scapes Cabanatuan</h3>
-                <p>
-                    Property Specialist<br>
-                    Address: Brgy. Bangad, Cabanatuan City<br><br>
-                    Inclusive Date: July 2019 – October 2019.
-                </p>
-                <h3>Hyundai Cabanatuan City</h3>
-                <p>Trucks and Buses Sales Consultant<br>
-                    Address: Km 108 Maharlika Highway, Cabanatuan City, 3100<br><br>
-                    Inclusive Date: March 2022 – November 2022
-                </p>
-                <h3>Department of Education Division of San Jose City</h3>
-                 <p>
-                    Technical Support/Programmer (OJT)<br>
-                    Address: Sto. Nino 2nd, San Jose City, Nueva Ecija<br><br>
-                    Inclusive Date: February 2016 - April 2016 (300 hours)
-                 </p>  
-            </div>
-            <hr/>
-            <div id="cse" class="cse">
+           
+        <section id="cse" class="section info">
                 <h2>Government Examinations Passed:</h2>
                 <h3>Career Service Professional Eligibility - 2023, Civil Service Commission</h3>
                 <p>Exam Date: March 26, 2023</p>
-            </div>
+        </section>
             <hr/>
-            <div id="seminars" class="seminars">
+        <section id="seminars" class="section info">
                 <h2>Seminars Attended:</h2>
                 <ul>
-                    <li>Imagine Camp</li>
-                    <p>CLSU Auditorium, Central Luzon State University, Science City of Munoz, Nueva Ecija<br><br>
-                        Inclusive Date: February 22, 2015
+                    <li><span>Imagine Camp</span>
+                        <p>CLSU Auditorium, Central Luzon State University, Science City of Munoz, Nueva Ecija<br>
+                        Date: February 22, 2015</p>
+                    </li>
+                    <li><span>Youth for Information Technology (Y4IT)</span>
+                    <p>SMX Convention Center, Seashell Ln, Pasay, 1300 Metro Manila<br>
+                        Date: September 12, 2014
                     </p>
-                    <li>Youth for Information Technology (Y4IT)</li>
-                    <p>SMX Convention Center, Seashell Ln, Pasay, 1300 Metro Manila<br><br>
-                        Inclusive Date: September 12, 2014
-                    </p>
-                    <li>PREVAIL Real Estate Brokage Seminar / Training</li>
+                    </li>
+                    <li><span>PREVAIL Real Estate Brokage Seminar / Training</span>
                     <p>
-                        Jollibee Molito, Madrigal Avenue, Ayala Alabang, Muntinlupa City<br><br>
-                        Inclusive date July 10 – 11, 2019
+                        Jollibee Molito, Madrigal Avenue, Ayala Alabang, Muntinlupa City<br>
+                        Inclusive Date: July 10 – 11, 2019
                     </p>
+                    </li>
+                    
+                </ul>
+                <h3>Online Courses</h3>
+                <ul>
+                    <li><span>UDEMY The Complete 2024 Web Development Bootcamp</span>
+                        <p>Number of Hours: 61<br>
+                        Inclusive Date: March 02 - December 26, 2024
+                        </p>
+                    </li>
+                    <li><span>CISCO Networking Academy Course</span>
+                        <p>Introduction to Cybersecurity, Introduction to Data Science, Introduction to
+                        Internet of Things, Computer Hardware Basics.<br>
+                            Inclusive Date: October 2024</p>
+                    </li>
+                </ul>
+        </section>
+            <hr/>
+        <section id="references" class="section info">
+                <h2>References:</h2>
+                <ul>
+                    <li><span>Marlon Peralta</span>
+                        Manager at Hyundai Cabanatuan<br>
+                        Address: Cabanatuan City, Nueva Ecija<br>
+                        Contact Number: +63 997 218 1337
+                    </li>
+                </ul>
+                <ul>
+                    <li><span>Marites A. Ronquillo</span>
+                         Physician/Doctor at E.B Hernandez Polyclinic <br>
+                         Address: Cabanatuan City, Nueva Ecija<br>
+                         Contact Number: +63 925 570 0521		
+                    </li>
+                </ul>
+                <ul>
+                    <li><span>Jerson L. Vergara</span>
+                        Barangay Captain at Brgy. T.L Padilla<br>
+                        Address: Carranglan, Nueva Ecija<br>
+                        Contact Number: +63 967 237 6414		
+                    </li>
                 </ul>
             </div>
-            <hr/>
-            <div id="references" class="reference">
-                <h2>References:</h2>
-                <h3>Mrs. Rizalina Gravidez</h3>
-                <p>Retired Carranglan National High School (CNHS) English Teacher<br>
-                    Brgy. F.C Otic, Carranglan, Nueva Ecija<br>
-                    (+63) 926-106-9448
-                </p>
-                <h3>Mr. Marlon Naagas</h3>
-                <p>Chairman, Central Luzon State University<br>
-                    Central Luzon State University, Science City of Muñoz, Nueva Ecija<br>
-                    (+63) 975-864-3538
-                    </p>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-4 mt-auto">
+            <div class="container">
+              <p class="mb-2">© 2026 Mark Baltazar</p>
+              
+              <div>
+                <a href="https://www.facebook.com/mpl.baltazar" target="_blank" class="text-white me-3">Facebook</a>
+                <a href="https://www.instagram.com/markpaolobaltazar/" target="_blank" class="text-white me-3">Instagram</a>
+                <a href="https://www.linkedin.com/in/mark-paolo-baltazar-aa074a1b5/" target="_blank" class="text-white">LinkedIn</a>
+              </div>
             </div>
-        </section>
-        <section>
-            <footer>
-                <div class="section-footer">
-                    <h3>© Mark Baltazar @ The App Brewery 2024.</h3>
-                    <div class="socials">
-                        <a target="_blank" href="https://www.facebook.com/mpl.baltazar">Facebook</a>
-                        <a target="_blank" href="https://www.instagram.com/markpaolobaltazar/">Instagram</a>
-                        <a target="_blank" href="https://www.linkedin.com/in/mark-paolo-baltazar-aa074a1b5/">LinkedIn</a> 
-                    </div>
-                </div>
-            </footer>    
-        </section>
+          </footer>
 
 
-        <script>
-            function MediaQuery(x) {
-                if (x.matches) { 
-                window.onscroll = function() {NavFloatRemove()};
-                } 
-                else {
-                window.onscroll = function() {NavFloat()};
-                }
-                }
-            function NavFloat() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            function NavFloatRemove(){
-                navbar.classList.remove("sticky");
-            }    
-            var x = window.matchMedia("(max-width: 800px)")
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-            MediaQuery(x);
-            x.addEventListener("change", function() {MediaQuery(x);});
-            </script>
+        
     </body>
 
 </html>

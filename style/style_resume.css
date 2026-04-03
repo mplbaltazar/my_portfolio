@@ -2,43 +2,58 @@ body{
     background-color: #F1EEDC;
 }
 .nav{
-    overflow: hidden;
-    background-color: #B3C8CF;
-    border-radius: 10px;
-}
-.nav a{
-    float:left;
-    color: white;
-    text-decoration: none;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    border-radius: 10px;
-    padding: 14px;
-}
-.nav a:hover{
-    color: blue;
-    background-color: #F6F5F2;
-}
-.content{
-    padding: 16px;
-}
-.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
     width: 100%;
-  }
-.sticky + .content {
-    padding-top: 60px;
-  }
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.nav-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.details{
-    display: grid;
-    padding: 10px;
-    height: auto;
-    grid-template-columns: 1.5fr .5fr;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+
+    gap: 10px 20px;
+    padding: 0 5px;
+}
+.nav-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-inner a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.nav-inner a:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+.nav a:last-child {
+    margin-right: 10px;
+}
+.nav-inner a.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 .details > img {
     float: right;
@@ -47,38 +62,55 @@ body{
     margin: auto;
 }
 .details_main{
-    float: left;
-    display: inline;
-    height: auto;
+    flex: 1;
+    min-width: 250px;
+}
+.details_main h1 {
+    margin-bottom: 15px;
+}
+.info {
+    margin-bottom: 10px;
+}
 
+.info span {
+    font-weight: bold;
+    display: block;
 }
-.details_main > h4{
-    float: left;
+
+.info p {
     margin: 0;
+    color: red;
 }
-.details_main > h1{
-    font-size: 2rem;
-    text-align: center;
+.info li {
+    margin-bottom:10px;
+    color: red;
 }
-.objective{
-    margin: auto;
-    width: 80%;
+
+.skills-group {
+    margin-bottom: 20px;
 }
-.technical_skills{
-    margin: auto;
-    width: 80%;
+
+.skills-group h4 {
+    margin-bottom: 5px;
+   
 }
-.educ_h2{
-    margin: auto;
-    width: 80% 
+
+.skills-group ul {
+    padding-left: 20px;
+    margin: 0;
+    color: red;
+}
+
+.skills-group li {
+    margin-bottom: 5px;
 }
 .educ_background{
     margin: auto;
-    width: 80%;
     display: grid;
     grid-template-columns: .5fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 .items1{
     grid-area: 1;
 }
@@ -97,45 +129,40 @@ body{
 .items6{
     grid-area: 3 / 2;
 }
-.profile{
+.items7{
+    grid-area: 4;
+}
+.items6{
+    grid-area: 4 / 2;
+}
+.work_experience{
     margin: auto;
-    width: 50%;
     display: grid;
-    grid-template-columns: .5fr .5fr;
-    grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
-    height: auto;
-}
-.profile_h2{
-    width: 80%;
-    margin: auto; 
-}
-.profile_detail{
-    width: 80%;
-    margin: auto; 
-}
-.work_exp_h2{
-    width: 80%;
-    margin: auto; 
-}
-.work_experiences{
-    display: grid;
-    width: 60%;
-    margin: auto;
-    grid-template-columns: .5fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.cse{
-    width: 80%;
-    margin: auto;  
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.seminars{
-    width: 80%;
-    margin: auto; 
+
+.row {
+    display: grid !important; 
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    align-items: center;
 }
-.reference{
-    width: 80%;
-    margin: auto;
+
+.row span {
+    font-weight: bold;
 }
+
+.row p {
+    margin: 0;
+    color: red;
+}
+
 .back_button{
     float: left;
     color: whitesmoke;
@@ -155,11 +182,10 @@ body{
     font-family: "sacramento", sans-serif;
     font-size: 3rem;
 }
-.section-footer{
-    display: block;
-    background-color: #B3C8CF;
-    border-radius: 20px;
-    text-align: center;
+.section {
+    padding: 20px 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .socials{
     display: grid;
